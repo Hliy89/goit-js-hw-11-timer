@@ -10,7 +10,7 @@ class CountdownTimer {
   }
   // ------------------------------
   start() {
-     const targetDate = new Date('Mar 31, 2021');
+     this.targetDate = new Date('Mar 31, 2021');
     const timerId = setInterval(() => {
       const currentTime = Date.now();
       const deltaTime = this.targetDate - currentTime;
